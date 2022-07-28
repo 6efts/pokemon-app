@@ -1,0 +1,82 @@
+@import './variables';
+
+.List-Pokemon{
+
+
+    &__filter{
+        
+        
+        h1{
+            margin-bottom: 8px 0;
+        }
+        
+        width: 300px;
+        background-color: #c14646;
+        text-align: center;
+        border: 5px solid black;
+        height: 100vh;
+       
+        & ul li{
+            
+            list-style: none;
+            font-size: 19px;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+            padding-block: 8.1px;
+            
+        & ul li:last-child{
+            border-bottom: 0px;
+        }
+            
+            & a {
+                text-decoration: none;
+                color: white;
+            }
+            
+            & a:hover{
+                color: black;
+            }
+        }
+    }
+
+    &__content{
+        width: 90vw;
+        margin-left: 300px;
+        
+
+        & a {
+            text-decoration: none;
+            color: white;
+
+            .Pokemon-item {
+                
+                    @include flex(column,center,center,wrap);
+                    width: 500px;
+                    border: 2px solid black;
+                    height: 120px;
+                    border-radius: 10px;
+                    margin: 10px;
+                    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.8) ), url(https://wallpaperaccess.com/full/45636.jpg);
+                    background-repeat: no-repeat;
+                    object-fit: cover;
+                    background-position: center;
+                    
+                   
+                & img {
+                    width: 110px;
+                }
+                
+            }
+        }
+
+        & a:visited{
+            color: white;
+        }
+
+        & a:hover{
+            color: red;
+        }
+        
+        
+    }
+}

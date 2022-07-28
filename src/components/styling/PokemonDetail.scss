@@ -1,0 +1,42 @@
+@import './variables';
+
+.List{
+    text-align: center;
+    
+    & a {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    
+    & a:hover {
+        color: red;
+    }
+}
+.Card{
+    background: url(../../images/card.png);
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 450px;
+    background-size: cover;
+    margin: 100px auto 0;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    border-radius: 16px;
+    
+    & img {
+        position: absolute;
+        top: 60px;
+        left: 100px;
+        width: 120px;
+    }
+    
+    & p {
+        position: absolute;
+        bottom: 100px;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 26px;
+    }
+}
